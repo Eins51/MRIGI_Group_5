@@ -85,4 +85,4 @@ python data_visualization.py
 ```
 ##Demo
 
-![WPS动图制作](E:\Desktop\WPS动图制作.gif)
+![Demo GIF](https://github.com/Eins51/MRIGI_Group_5/blob/master/Demo/Demo%20-%20Pressing%20Effect.gif?raw=true)
