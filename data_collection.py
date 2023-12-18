@@ -1,3 +1,29 @@
+"""
+ToF Sensor Data Collection and Storage Tool
+
+This script is designed to interface with a serially-connected ToF sensor system.
+It allows for real-time data collection from up to 8 sensors, handles the user
+interaction for selecting a sensor, and saves the collected data in a timestamped 
+file format.
+
+Author: Yi Wang
+Copyright: 2023, Yi Wang, Group 5, MRIGI, Imperial College London
+
+Dependencies:
+- Python 3.8
+- PySerial library for serial communication
+- Keyboard library for capturing keypresses
+- OS and shutil libraries for file and directory management
+
+Usage:
+Run this script directly in a Python environment. Ensure that the connected
+serial device is correctly configured at 'COM8'. Use numeric keys (1-8) to select
+a sensor, or '0' to cycle through all sensors. Collected data will be stored in
+the 'data' folder of the script's directory.
+
+"""
+
+
 import serial
 import time
 import os
