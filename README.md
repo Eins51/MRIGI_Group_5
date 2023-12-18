@@ -83,3 +83,6 @@ python data_collection.py
 ```
 python data_visualization.py
 ```
+##Demo
+
+![WPS动图制作](E:\Desktop\WPS动图制作.gif)
