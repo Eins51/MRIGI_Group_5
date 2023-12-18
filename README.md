@@ -21,11 +21,11 @@ pip install serial time shutil os numpy pandas pyvista scipy pillow keyboard mul
 
 ## Usage
 
-> ####*Note 1: Arduino Serial Monitor*
+> #### *Note 1: Arduino Serial Monitor*
 >
 > *Running the data collection process (`data_collection.py`) and the Arduino Serial Monitor simultaneously may lead to conflicts, as both require access to the same serial port. Ensure that only one of these is accessing the serial port at a time.*
 
-> ####*Note 2: Customization for Different Ports*
+> #### *Note 2: Customization for Different Ports*
 >
 > *If you are using a different port, make sure to update the port in the code (`ser = serial.Serial('COM8', 115200, timeout=0.01)`, `COM8` in this case) to match your hardware setup.*
 
@@ -37,13 +37,13 @@ pip install serial time shutil os numpy pandas pyvista scipy pillow keyboard mul
 
 The `eight_Sensor.ino` sketch is designed to interface with multiple VL53L5CX sensors using a Qwiic Mux. It initializes the sensors, sets their resolution and frequency, and continuously collects distance measurements. The data from each sensor is printed over the serial connection in an array format representing the sensor's field of view.
 
-####Features
+#### Features
 
 - Supports up to 8 VL53L5CX sensors.
 - Configurable sensor resolution and ranging frequency.
 - Real-time data output in an array format via the serial port.
 
-####Setup
+#### Setup
 
 1. Connect the VL53L5CX sensors to the Qwiic Mux.
 2. Upload the `eight_Sensor.ino` sketch to your Arduino board.
@@ -64,7 +64,7 @@ To simultaneously run data collection and visualization, follow these steps:
 3. The data collection process will start first, followed by the data visualization process after a short delay.
 
 
-###3. (Optional) Individual Python Scripts
+### 3. (Optional) Individual Python Scripts
 
 #### Data Collection Script
 
@@ -83,6 +83,6 @@ python data_collection.py
 ```
 python data_visualization.py
 ```
-##Demo
+## Demo
 
 ![Demo GIF](https://github.com/Eins51/MRIGI_Group_5/blob/master/Demo/Demo%20-%20Pressing%20Effect.gif?raw=true)
