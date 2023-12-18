@@ -1,3 +1,36 @@
+"""
+ToF Sensor Data Visualization Tool
+
+This script is designed for near real-time visualization of sensor data in a 3D environment. 
+It processes and interpolates sensor data from multiple sources, generating 3D surface
+reconstruction and visual representations. The script supports dynamic updates based on
+new sensor data files and allows for interactive control of the visualization parameters.
+
+Author: Yi Wang
+Copyright: 2023, Yi Wang, Group 5, MRIGI, Imperial College London
+
+Dependencies:
+- Python 3.8
+- NumPy for numerical operations
+- Pandas for data manipulation
+- PyVista for 3D visualization
+- SciPy for scientific computations and interpolations
+- Pillow for image processing
+- Keyboard for capturing keypresses
+- Time for handling time-related functions
+- OS for file and directory operations
+- IO for handling I/O operations
+
+Usage:
+Run this script in a Python environment where all dependencies are installed. The script 
+listens for new sensor data files in the specified directory and updates the 3D 
+visualization accordingly. Interactive controls are available for manipulating the 
+visualization during runtime. Ensure the sensor data files are formatted correctly 
+and placed in the 'data' directory. 
+
+"""
+
+
 import os
 import numpy as np
 import pandas as pd
