@@ -8,6 +8,7 @@ This repository contains a set of tools for collecting and visualizing sensor da
 - `data_collection.py` - Script for collecting data from sensors and storing it in a specified format.
 - `data_visualization.py` - Script for near real-time 3D visualization of the collected sensor data.
 - `both_processes.py` - Main script that orchestrates the data collection and visualization processes.
+- `data` - Folder containing pre-collected sensor data files.
 - `Demo` - Folder containing demonstration videos and images of the toolset in action.
 
 ## Installation
@@ -55,14 +56,13 @@ To simultaneously run data collection and visualization, follow these steps:
 
 1. Start the main script:
 
-    ```bash
-    python both_processes.py
-    ```
+   ```bash
+   python both_processes.py
+   ```
 
 2. Ensure that the sensor data files are formatted correctly and placed in the 'data' directory. The visualization script will process these files in near real-time.
 
 3. The data collection process will start first, followed by the data visualization process after a short delay.
-
 
 ### 3. (Optional) Individual Python Scripts
 
@@ -83,6 +83,16 @@ python data_collection.py
 ```
 python data_visualization.py
 ```
+
+## Data Folder
+
+The `data` folder contains pre-collected sensor data files, which are useful for testing and demonstration purposes. Each file in this folder represents the data collected from a sensor and is named in the format `timestamp_sensor_data_sensorID.txt`. For example, a file named `1702647737.609_sensor_data_1.txt` contains data from sensor 1 collected at the specific timestamp `1702647737.609`.
+
+### Contents of Data Folder
+
+- Text files with sensor data, named in the format `timestamp_sensor_data_sensorID.txt`.
+- Each file includes data in a structured format that can be directly used by the visualization script.
+
 ## Demo
 
 ![Demo GIF](https://github.com/Eins51/MRIGI_Group_5/blob/master/Demo/Demo%20-%20Pressing%20Effect.gif?raw=true)
